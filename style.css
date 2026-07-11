@@ -1,0 +1,517 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+    background:#050505;
+    color:white;
+}
+
+
+
+/* PORTADA */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+
+    background-image:
+    linear-gradient(
+    to bottom,
+    rgba(0,0,0,.45),
+    #050505
+    ),
+    url("fondo.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+
+.logo{
+
+    width:420px;
+
+    max-width:90%;
+
+
+    filter:drop-shadow(0 0 20px black);
+
+}
+
+
+
+.hero p{
+
+    font-size:22px;
+
+    margin:20px;
+
+}
+
+
+
+
+
+/* CONTADOR */
+
+
+.stats{
+
+    background:rgba(0,0,0,.65);
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+.stats span{
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+/* BOTONES */
+
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+
+
+button{
+
+    background:#e50914;
+
+    color:white;
+
+    border:0;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+
+.share{
+
+    background:#333;
+
+}
+
+
+
+
+
+/* REPRODUCTOR */
+
+
+.player{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.95);
+
+    z-index:100;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+
+.player iframe{
+
+    width:90%;
+
+    height:75%;
+
+    border:0;
+
+    border-radius:15px;
+
+}
+
+
+
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:30px;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* VIDEOS */
+
+
+main{
+
+    padding:30px;
+
+}
+
+
+
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+.card{
+
+    background:#111;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+
+
+
+.card h3{
+
+    padding:12px;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+.card:hover{
+
+    transform:scale(1.06);
+
+    box-shadow:0 0 25px rgba(255,255,255,.25);
+
+}
+
+
+
+
+
+/* REDES ICONOS */
+
+
+.social{
+
+    background:#000;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:25px;
+
+}
+
+
+
+
+.social-links a{
+
+    width:55px;
+
+    height:55px;
+
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    font-size:28px;
+
+
+    border-radius:50%;
+
+
+    background:#111;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    transition:.3s;
+
+}
+
+
+
+.social-links a:hover{
+
+    background:#e50914;
+
+    transform:scale(1.15);
+
+}
+
+
+
+
+
+/* APOYO */
+
+
+.apoyo{
+
+    margin-top:40px;
+
+    padding:30px 15px;
+
+    background:#0b0b0b;
+
+    border-radius:15px;
+
+}
+
+
+
+
+.apoyo a{
+
+    display:inline-block;
+
+    color:white;
+
+    text-decoration:none;
+
+    background:#111;
+
+    padding:14px 20px;
+
+    border-radius:8px;
+
+    margin:8px;
+
+}
+
+
+
+
+.apoyo a:hover{
+
+    background:#e50914;
+
+}
+
+
+
+
+
+.copyright{
+
+    margin-top:30px;
+
+    color:#777;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.logo{
+
+    width:300px;
+
+}
+
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+
+
+.grid{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+
+.player iframe{
+
+    width:95%;
+
+    height:55%;
+
+}
+
+
+}
+.patro-btn{
+
+    background:#111;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+
+}
+
+
+.patro-btn:hover{
+
+    background:#e50914;
+
+    transform:scale(1.05);
+
+}
+.patro-card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:20px auto;
+
+    border-radius:12px;
+
+}
